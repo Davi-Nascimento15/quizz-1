@@ -1,0 +1,294 @@
+.container {
+    .nome {
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+
+        &.hidden {
+            display: none;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .dificuldade {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &.hidden {
+            display: none;
+        }
+
+        .lista {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 60px;
+                width: 100%;
+                max-width: 250px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 15px 2px #00000066;
+                transition: transform 0.5s;
+                background: #080;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .final {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &.hidden {
+            display: none;
+        }
+
+        .nome-final {
+            font-size: 48px;
+        }
+
+        .ponto-final {
+            font-size: 36px;
+            font-weight: 600;
+            color: #080;
+            margin-top: -35px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            background: yellow !important;
+            color: #000;
+        }
+    }
+
+    .jogo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &.hidden {
+            display: none;
+        }
+
+        .container-questao {
+            background: #014f86;
+            padding: 25px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 80%;
+
+            .topo {
+                display: flex;
+                width: 100%;
+                gap: 45px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                span {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+
+            .questao {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 20px;
+
+                .enunciado {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 600;
+                    margin-top: 25px;
+                }
+
+                .alternativas {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    &.bloquear {
+                        .alternativa {
+                            cursor: not-allowed !important;
+
+                            &:hover {
+                                border-color: #012a4a !important;
+                                background: #012a4a !important;
+
+                                .circulo {
+                                    color: #fff !important;
+                                    background: #080 !important;
+                                }
+
+                                .texto {
+                                    color: #fff !important;
+                                }
+
+                                &.correta {
+                                    background: #080 !important;
+                                    border-color: #080 !important;
+
+                                    .circulo {
+                                        background: #fff !important;
+                                        color: #000 !important;
+                                    }
+                                }
+
+                                &.naorespondeu {
+                                    background: yellow !important;
+                                    border-color: yellow !important;
+
+                                    .circulo {
+                                        background: #fff !important;
+                                        color: #000 !important;
+                                    }
+
+                                    .texto {
+                                        color: #000 !important;
+                                    }
+                                }
+
+                                &.errada {
+                                    background: #f00 !important;
+                                    border-color: #f00 !important;
+
+                                    .circulo {
+                                        background: #fff !important;
+                                        color: #000 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .alternativa {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        gap: 15px;
+                        border: 1px solid #012a4a;
+                        border-radius: 8px;
+                        padding: 7px;
+                        background: #012a4a;
+                        transition: all 0.2s;
+
+                        &.correta {
+                            background: #080;
+                            border-color: #080;
+
+                            .circulo {
+                                background: #fff;
+                                color: #000;
+                            }
+                        }
+
+                        &.errada {
+                            background: #f00;
+                            border-color: #f00;
+
+                            .circulo {
+                                background: #fff;
+                                color: #000;
+                            }
+                        }
+
+                        &.naorespondeu {
+                            background: yellow !important;
+                            border-color: yellow !important;
+
+                            .circulo {
+                                background: #fff !important;
+                                color: #000 !important;
+                            }
+
+                            .texto {
+                                color: #000 !important;
+                            }
+                        }
+
+
+                        &:hover {
+                            cursor: pointer;
+                            background: #fff;
+
+                            .texto {
+                                color: #000;
+                            }
+                        }
+
+                        .circulo {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 45px;
+                            height: 45px;
+                            min-width: 45px;
+                            border-radius: 50%;
+                            color: #fff;
+                            background: #080;
+                            font-size: 24px;
+                        }
+
+                        .texto {
+                            font-size: 18px;
+                            color: #fff;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .indice {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 20px;
+                font-weight: 600;
+                color: #fff;
+                margin-top: 25px;
+            }
+        }
+    }
+}

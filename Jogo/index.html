@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../index-principal.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nome" id="nome">
+            <h1>
+                Jogador
+            </h1>
+            <form id="jogador" onsubmit="return false">
+                <label for="nome">
+                    Insira seu nome
+                </label>
+                <input name="nome" type="text" maxlength="255" id="nome-jogador">
+                <button onclick="DefinirNome()">
+                    Iniciar
+                </button>
+            </form>
+        </div>
+        <div class="dificuldade hidden" id="dificuldade">
+             <h1>
+                Dificuldade
+            </h1>
+            <div class="lista">
+                <div class="box" id="nivel-1" onclick="DefinirDificuldade(1)">
+                    Fácil
+                </div>
+                <div class="box" id="nivel-2" onclick="DefinirDificuldade(2)">
+                    Médio
+                </div>
+                <div class="box" id="nivel-3"  onclick="DefinirDificuldade(3)">
+                    Difícil
+                </div>
+                <div class="box" id="nivel-4"  onclick="DefinirDificuldade(4)">
+                    Muito Díficil
+                </div>
+            </div>
+        </div>
+        <div class="jogo hidden" id="jogo">
+            <div class="container-questao">
+                <div class="topo">
+                    <span id="jogador-vez"></span>
+                    <span id="tempo">00:59</span>
+                </div>
+                <div class="questao">
+                    <div class="enunciado" id="enunciado"></div>
+                    <div class="alternativas" id="alternativas"></div>
+                </div>
+                <div class="indice" id="indice">
+                    1/10
+                </div>
+            </div>
+        </div>
+        <div class="final hidden" id="final">
+            <h1 class="nome-final" id="nome-final">
+                Higor Nascimento
+            </h1>
+            <span class="ponto-final" id="ponto-final">
+                10 acerto(s)
+            </span>
+            <a href="/Ranking">
+                Ranking
+            </a>
+            <a href="/">
+                Início
+            </a>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.container {
+    a {
+        color: #000;
+        background: yellow;
+        margin-top: 45px;
+    }
+
+    .dificuldade {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 60px;
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px 2px #00000066;
+            transition: transform 0.5s;
+            background: #080;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+
+            &.selecionado {
+                background: yellow;
+                color: #000;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .ranking {
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+        align-items: center;
+        gap: 15px;
+        counter-reset: step-count;
+        width: 100%;
+
+        .jogador {
+            background: #014f86;
+            padding: 10px 25px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nome {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                &::before {
+                    counter-increment: step-count;
+                    content: counter(step-count)'º';
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    background: #080;
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .nome,
+            .pontos {
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .pontos {
+                color: #080;
+            }
+        }
+
+    }
+}

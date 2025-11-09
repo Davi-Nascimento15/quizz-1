@@ -1,0 +1,159 @@
+{
+  "perguntas": [
+    {
+      "enunciado": "Qual a cor do cachorro do Simpsons?",
+      "dificuldade":1,
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Marrom",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Branco",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Laranja",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preto",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "enunciado": "Qual a cor do cachorro do Simpsons 2?",
+      "dificuldade":2,
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Marrom",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Branco",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Laranja",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preto",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "enunciado": "Qual a cor do cachorro do Simpsons 3?",
+      "dificuldade":3,
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Marrom",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Branco",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Laranja",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preto",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "enunciado": "Qual a cor do cachorro do Simpsons 4?",
+      "dificuldade":4,
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Marrom",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Branco",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Laranja",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preto",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "enunciado": "Qual a cor do cachorro do Simpsons 4?",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Marrom",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "texto": "Branco",
+          "correta": false
+        },
+        {
+          "letra": "C",
+          "texto": "Laranja",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "Preto",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "enunciado": "Qual é a raiz quadrada de 4?",
+      "dificuldade":1,
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "3",
+          "correta": false
+        },
+        {
+          "letra": "B",
+          "texto": "2",
+          "correta": true
+        },
+        {
+          "letra": "C",
+          "texto": "44",
+          "correta": false
+        },
+        {
+          "letra": "D",
+          "texto": "95",
+          "correta": false
+        }
+      ]
+    }
+  ]
+}
